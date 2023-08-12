@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping auto-import="false" default-lazy="false">
+	<import class="com.bses.portal.newconnection.services.model.DssSevaKendraMst" />
+	<class name="com.bses.portal.newconnection.services.model.impl.DssSevaKendraMstImpl" table="DSS_SEVAKENDRA_MST">
+		<composite-id class="com.bses.portal.newconnection.services.service.persistence.DssSevaKendraMstPK" name="primaryKey">
+			<key-property column="DISTRICT" name="district" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+			<key-property column="SK_ADDRESS_P2" name="skAddrP2" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		</composite-id>
+		<property column="ACTIVE" name="active" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property column="ENTRY_DATE" name="entryDate" type="org.hibernate.type.TimestampType" />
+		<property column="DC_MACHINEIP" name="dcMachineIp" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property column="SK_ADDRESS_P1" name="skAddressP1" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property column="TELEPHONE_NO" name="telephoneNo" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property column="NAME" name="name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property column="APOINTMENT_DAYSINTERVAL" name="appoitnmentDaysInterval" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property column="APP_SLOT_CNT" name="appslotcount" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property column="GPS_LINK" name="gpslink" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property column="YOU_TUBE_ENGLISH" name="youtubelinkenglish" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property column="YOU_TUBE_HINDI" name="youtubelinkhindi" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property column="DSKMANAGER" name="dskManager" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property column="DSKMANAGERCONTACTNO" name="dskManagerContactNo" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property column="DSKTELECALLERNO" name="dskTeleCallerNo" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property column="DSKMANAGEREMAILID" name="dskManagerEmailId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property column="BUSINESSMANAGER" name="businessManager" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property column="BUSINESSMANAGERCONTACTNO" name="businessManagerContactNo" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property column="BUSINESSMANAGEREMAILID" name="businessManagerEmailId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property column="AMPS" name="amps" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property column="AMPSCONTACTNO" name="ampsContactNo" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property column="AMPSEMAILID" name="ampsEmailId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property column="BUSINESSADDRESS" name="businessAddress" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+</hibernate-mapping>

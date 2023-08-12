@@ -1,0 +1,12 @@
+Bundle-Name: bses-sap-service-connector
+Bundle-SymbolicName: bses.sap.service.connector
+Bundle-Version: 1.0.0
+Include-Resource:@commons-text-1.0.jar,@commons-lang3-3.9.jar,
+
+Import-Package: \
+	!org.apache.commons.lang3,\*
+Export-Package: \
+	com.bses2.sap.connector.services,\
+	com.bses2.sap.ws,\
+	com.bses2.sap.connector.services,\
+	com.bses2.sap.model

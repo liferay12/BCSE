@@ -1,0 +1,120 @@
+/**
+ * Get_PoleDetailsbyltfeeder.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package com.bses2.sap.ws;
+
+public class Get_PoleDetailsbyltfeeder  implements java.io.Serializable {
+    private java.lang.String LTFeeder;
+
+    public Get_PoleDetailsbyltfeeder() {
+    }
+
+    public Get_PoleDetailsbyltfeeder(
+           java.lang.String LTFeeder) {
+           this.LTFeeder = LTFeeder;
+    }
+
+
+    /**
+     * Gets the LTFeeder value for this Get_PoleDetailsbyltfeeder.
+     * 
+     * @return LTFeeder
+     */
+    public java.lang.String getLTFeeder() {
+        return LTFeeder;
+    }
+
+
+    /**
+     * Sets the LTFeeder value for this Get_PoleDetailsbyltfeeder.
+     * 
+     * @param LTFeeder
+     */
+    public void setLTFeeder(java.lang.String LTFeeder) {
+        this.LTFeeder = LTFeeder;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof Get_PoleDetailsbyltfeeder)) return false;
+        Get_PoleDetailsbyltfeeder other = (Get_PoleDetailsbyltfeeder) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = true && 
+            ((this.LTFeeder==null && other.getLTFeeder()==null) || 
+             (this.LTFeeder!=null &&
+              this.LTFeeder.equals(other.getLTFeeder())));
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = 1;
+        if (getLTFeeder() != null) {
+            _hashCode += getLTFeeder().hashCode();
+        }
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(Get_PoleDetailsbyltfeeder.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://tempuri.org/", ">Get_PoleDetailsbyltfeeder"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("LTFeeder");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://tempuri.org/", "LTFeeder"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

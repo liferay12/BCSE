@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<beans
+	default-destroy-method="destroy"
+	default-init-method="afterPropertiesSet"
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+>
+	<bean class="com.bses.connection2.service.impl.ConnectionDocumentLocalServiceImpl" id="com.bses.connection2.service.ConnectionDocumentLocalService" />
+	<bean class="com.bses.connection2.service.impl.ConnectionDocumentServiceImpl" id="com.bses.connection2.service.ConnectionDocumentService" />
+	<bean class="com.bses.connection2.service.persistence.impl.ConnectionDocumentPersistenceImpl" id="com.bses.connection2.service.persistence.ConnectionDocumentPersistence" parent="basePersistence" />
+	<bean class="com.bses.connection2.service.impl.ConnectionRequestLocalServiceImpl" id="com.bses.connection2.service.ConnectionRequestLocalService" />
+	<bean class="com.bses.connection2.service.impl.ConnectionRequestServiceImpl" id="com.bses.connection2.service.ConnectionRequestService" />
+	<bean class="com.bses.connection2.service.persistence.impl.ConnectionRequestPersistenceImpl" id="com.bses.connection2.service.persistence.ConnectionRequestPersistence" parent="basePersistence" />
+	<bean class="com.bses.connection2.service.impl.LocalityDivisionLocalServiceImpl" id="com.bses.connection2.service.LocalityDivisionLocalService" />
+	<bean class="com.bses.connection2.service.impl.LocalityDivisionServiceImpl" id="com.bses.connection2.service.LocalityDivisionService" />
+	<bean class="com.bses.connection2.service.persistence.impl.LocalityDivisionPersistenceImpl" id="com.bses.connection2.service.persistence.LocalityDivisionPersistence" parent="basePersistence" />
+	<bean class="com.bses.connection2.service.impl.OTPLocalServiceImpl" id="com.bses.connection2.service.OTPLocalService" />
+	<bean class="com.bses.connection2.service.impl.OTPServiceImpl" id="com.bses.connection2.service.OTPService" />
+	<bean class="com.bses.connection2.service.persistence.impl.OTPPersistenceImpl" id="com.bses.connection2.service.persistence.OTPPersistence" parent="basePersistence" />
+	<bean class="com.bses.connection2.service.impl.RequestNumberSeqLocalServiceImpl" id="com.bses.connection2.service.RequestNumberSeqLocalService" />
+	<bean class="com.bses.connection2.service.impl.RequestNumberSeqServiceImpl" id="com.bses.connection2.service.RequestNumberSeqService" />
+	<bean class="com.bses.connection2.service.persistence.impl.RequestNumberSeqPersistenceImpl" id="com.bses.connection2.service.persistence.RequestNumberSeqPersistence" parent="basePersistence" />
+</beans>

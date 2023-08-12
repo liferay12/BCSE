@@ -1,0 +1,8 @@
+Bundle-Name: bses-connection-status-web
+Bundle-SymbolicName: com.bses.connection2.status.web
+Bundle-Version: 1.0.0
+Export-Package: com.bses.connection2.status.web.constants
+Import-Package: *; version="0";resolution:=optional
+-includeresource:lib/commons-lang3-3.9.jar=commons-lang3-3.9.jar
+Bundle-ClassPath:.,\
+  lib/commons-lang3-3.9.jar

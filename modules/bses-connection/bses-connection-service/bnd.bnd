@@ -1,0 +1,10 @@
+Bundle-Name: bses-connection-service
+Bundle-SymbolicName: com.bses.connection2.service
+Bundle-Version: 1.0.0
+Liferay-Require-SchemaVersion: 1.0.0
+Liferay-Service: true
+Import-Package: *
+
+-includeresource:lib/commons-lang3-3.9.jar=commons-lang3-3.9.jar
+Bundle-ClassPath:.,\
+  lib/commons-lang3-3.9.jar

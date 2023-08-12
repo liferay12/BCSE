@@ -1,0 +1,420 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.0.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_0_0.dtd">
+
+<service-builder package-path="com.bses.connection2">
+	<namespace>bsesconn</namespace>
+	<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
+	<entity name="ConnectionRequest" local-service="true" remote-service="true" uuid="true">
+
+		<!-- PK fields -->
+
+		<column name="connectionRequestId" primary="true" type="long" />
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long" />
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="userName" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+		<column name="requestNo" type="String" />
+		<column name="mobileNo" type="String" />
+		<column name="emailId" type="String" />
+		<column name="requestDate" type="Date" />
+		<column name="requestType" type="String" />
+		<column name="requestStatus" type="String" />
+		<column name="requestMode" type="String" />
+		
+		<!-- Consumer Information -->
+		<column name="consumerType" type="String" />
+		<column name="title" type="String" />
+		<column name="firstName" type="String" />
+		<column name="middleName" type="String" />
+		<column name="lastName" type="String" />
+		<column name="sonDaughterWife" type="String" />
+		<column name="fatherOrHusbandName" type="String" />
+		<column name="firmName" type="String" />
+		<column name="signatoryName" type="String" />
+		<column name="signatoryDesignation" type="String" />
+		<column name="organizationType" type="String" />
+		<column name="incorporationDate" type="Date" />
+		<column name="gstIn" type="String" />
+		<column name="panNo" type="String" />
+		
+		<!-- Address Information -->
+		<column name="houseNo" type="String" />
+		<column name="floor" type="String" />
+		<column name="buildingName" type="String" />
+		<column name="street" type="String" />
+		<column name="colonyArea" type="String" />
+		<column name="landmark" type="String" />
+		<column name="landmarkDetails" type="String" />
+		<column name="pinCode" type="String" />
+		<column name="registeredAddress" type="String" />
+			<!-- Address 2 -->
+		<column name="locality" type="String" />
+		<column name="district" type="String" />
+		<column name="houseNo2" type="String" />
+		<column name="floor2" type="String" />
+		<column name="buildingName2" type="String" />
+		<column name="street2" type="String" />
+		<column name="colonyArea2" type="String" />
+		<column name="landmark2" type="String" />
+		<column name="landmarkDetails2" type="String" />
+		<column name="pinCode2" type="String" />
+		<column name="indicateLandmark" type="String" />
+		
+		
+		<!-- Connection Information -->
+		<column name="connectionType" type="String" />
+		<column name="tariffCategory" type="String" />
+		<column name="displayCategory" type="String" />
+		<column name="evUsage" type="String" />
+		<column name="loadKva" type="float" />
+		<column name="loadKw" type="float" />
+		<column name="areaType" type="String" />
+		<column name="premisesType" type="String" />
+		<column name="buildingType" type="String" />
+		<column name="otherBuildingType" type="String" />
+		<column name="upicAvailable" type="boolean" />
+		<column name="upic" type="String" />
+		<column name="supplyType" type="String" />
+		<column name="purposeOfSupply" type="String" />
+		<column name="tempStartDate" type="Date" />
+		<column name="tempEndDate" type="Date" />
+		<column name="licenseCertificateNo" type="String" />
+		<column name="licenseIssueDate" type="Date" />
+		<column name="licenseValidityFrom" type="Date" />
+		<column name="licenseValidityTo" type="Date" />
+		
+		<!-- Checklist Information -->
+		<column name="wiringTest" type="boolean" />
+		<column name="wiringCertificate" type="String" />
+		<column name="elcbInstalled" type="boolean" />
+		<column name="elcbDocument" type="String" />
+		<column name="stiltParking" type="boolean" />
+		<column name="height9Mtr" type="boolean" />
+		<column name="height12Mtr" type="boolean" />
+		<column name="height15Mtr" type="boolean" />
+		<column name="height17Mtr" type="boolean" />
+		<column name="industrialLicense" type="boolean" />
+		<column name="industrialLicenseCertificate" type="String" />
+		<column name="fcc" type="boolean" />
+		<column name="fccCertificate" type="String" />
+		<column name="lift" type="boolean" />
+		<column name="hasLiftCertificate" type="boolean" />
+		<column name="liftCertificate" type="String" />
+		<column name="agriConsumer" type="boolean" />
+		<column name="hasBdoCertificate" type="boolean" />
+		<column name="bdoCertificate" type="String" />
+		<column name="hasPollutionCertificate" type="boolean" />
+		<column name="pollutionCertificate" type="String" />
+	
+		<column name="dpccClearanceRequired" type="boolean" />
+		<column name="hasDpccCertificate" type="boolean" />
+		<column name="dpccCertificate" type="String" />
+		
+		<column name="nonConfirmingArea" type="boolean" />
+		<column name="hasTradeLicense" type="boolean" />
+		<column name="tradeLicenseCertificate" type="String" />
+		
+		<column name="eServiceOnMail" type="boolean" />
+		<column name="eServiceMailId" type="String" />
+		<column name="eServiceMailValidated" type="boolean" />
+		<column name="optSubsidy" type="boolean" />
+		<column name="purchaseMeter" type="boolean" />
+		
+		<!-- Appointment Schedule Information -->
+		<column name="appointmentDate" type="Date" />
+		<column name="appointmentTime" type="String" />
+		<column name="appointmentFinishTime" type="String" />
+		<column name="appointmentDistrict" type="String" />
+		
+		<!-- Document Information -->
+		<column name="applicantPhoto" type="String" />
+		<column name="applicantSignature" type="long" />
+		<column name="idProofType" type="String" />
+		<column name="idProofNo" type="String" />
+		<column name="idProofDocument" type="String" />
+		<column name="ownershipProofType" type="String" />
+		<column name="ownershipProofDocument" type="String" />
+
+		<!-- Declaration Information -->
+		<column name="selfDeclaration" type="boolean" />
+		<column name="selfDeclarationTime" type="Date" />
+		
+		<!-- SAP Information -->
+		<column name="orderNo" type="String" />
+		<column name="bpNumber" type="String" />
+		<column name="caNumber" type="String" />
+		<column name="documentUploaded" type="String" />
+		<column name="sapOrderGenerated" type="String" />
+		<column name="changeRequest" type="boolean" />
+		<column name="oldData" type="String" />
+		<column name="changeRequestType" type="String" />
+		<column name="reasonForChange" type="String" />
+		
+		<column name="seqNo" type="Long" />
+		
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="requestNo" />
+		</order>
+
+		<!-- Finder methods -->
+
+		<finder name="RequestNo" return-type="Collection">
+			<finder-column name="requestNo" />
+		</finder>
+		
+		<finder name="OrderNo" return-type="Collection">
+			<finder-column name="requestNo" />
+		</finder>
+		
+		<finder name="CaNumber" return-type="Collection">
+			<finder-column name="caNumber" />
+		</finder>
+		
+		<finder name="BpNumber" return-type="Collection">
+			<finder-column name="bpNumber" />
+		</finder>
+		
+		<finder name="MobileNo" return-type="Collection">
+			<finder-column name="mobileNo" />
+		</finder>
+		
+		<finder name="MobileNoAndRequestNo" return-type="Collection">
+			<finder-column name="mobileNo" />
+			<finder-column name="requestNo" />
+		</finder>
+		
+		<finder name="MobileNoAndRequestStatus" return-type="Collection">
+			<finder-column name="mobileNo" />
+			<finder-column name="requestStatus" />
+		</finder>
+		
+		<finder name="EmailId" return-type="Collection">
+			<finder-column name="emailId" />
+		</finder>
+		
+		<finder name="MobileNoAndChangeRequest" return-type="Collection">
+			<finder-column name="mobileNo" />
+			<finder-column name="changeRequest" />
+		</finder>
+		
+		<finder name="CaNumberAndChangeRequest" return-type="Collection">
+			<finder-column name="caNumber" />
+			<finder-column name="changeRequest" />
+		</finder>
+		
+		<!-- References -->
+
+		<reference entity="AssetEntry" package-path="com.liferay.portlet.asset" />
+		<reference entity="AssetTag" package-path="com.liferay.portlet.asset" />
+	</entity>
+	
+	<entity local-service="true" name="OTP" remote-service="true" uuid="true">
+
+		<!-- PK fields -->
+
+		<column name="otpId" primary="true" type="long" />
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long" />
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="userName" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+
+		<column name="otp" type="String" />
+		<column name="mobileNo" type="String" />
+		<column name="emailId" type="String" />
+		<column name="expiryTime" type="Date" />
+		<column name="caNumber" type="String" />
+
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="otpId" />
+		</order>
+
+		<!-- Finder methods -->
+
+		<finder name="MobileNo" return-type="OTP">
+			<finder-column name="mobileNo" />
+		</finder>
+		
+		<finder name="EmailId" return-type="Collection">
+			<finder-column name="emailId" />
+		</finder>
+
+		<!-- References -->
+
+		<reference entity="AssetEntry" package-path="com.liferay.portlet.asset" />
+		<reference entity="AssetTag" package-path="com.liferay.portlet.asset" />
+	</entity>
+	
+	<entity name="LocalityDivision" local-service="true" remote-service="true" uuid="true">
+
+		<!-- PK fields -->
+
+		<column name="localityDivisionId" primary="true" type="long" />
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long" />
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="userName" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+
+		<column name="localityName" type="String" />
+		<column name="divisionCode" type="String" />
+		<column name="divisionName" type="String" />
+		<column name="complaintCenter" type="String" />
+
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="localityDivisionId" />
+		</order>
+
+		<!-- Finder methods -->
+
+		<finder name="LocalityName" return-type="Collection">
+			<finder-column name="localityName" />
+		</finder>
+		
+		<finder name="DivisionCode" return-type="Collection">
+			<finder-column name="divisionCode" />
+		</finder>
+		
+		<finder name="DivisionName" return-type="Collection">
+			<finder-column name="divisionName" />
+		</finder>
+		
+		<finder name="ComplaintCenter" return-type="Collection">
+			<finder-column name="complaintCenter" />
+		</finder>
+
+		<!-- References -->
+
+		<reference entity="AssetEntry" package-path="com.liferay.portlet.asset" />
+		<reference entity="AssetTag" package-path="com.liferay.portlet.asset" />
+	</entity>
+	
+	<entity name="ConnectionDocument" local-service="true" remote-service="true" uuid="true">
+
+		<!-- PK fields -->
+
+		<column name="connectionDocumentId" primary="true" type="long" />
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long" />
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="userName" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+
+		<column name="connectionRequestId" type="long" />
+		<column name="documentType" type="String" />
+		<column name="documentName" type="String" />
+		<column name="documentPath" type="String" />
+		<column name="clientFileName" type="String" />
+		<column name="transfered" type="String" />
+
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="connectionDocumentId" />
+		</order>
+
+		<!-- Finder methods -->
+
+		<finder name="ConnectionRequestId" return-type="Collection">
+			<finder-column name="connectionRequestId" />
+		</finder>
+		
+		<finder name="ConnectionRequestIdAndDocumentType" return-type="LocalityDivision">
+			<finder-column name="connectionRequestId" />
+			<finder-column name="documentType" />
+		</finder>
+
+		<!-- References -->
+
+		<reference entity="AssetEntry" package-path="com.liferay.portlet.asset" />
+		<reference entity="AssetTag" package-path="com.liferay.portlet.asset" />
+	</entity>
+	
+	
+	<entity local-service="true" name="RequestNumberSeq" remote-service="true" uuid="true">
+
+		<!-- PK fields -->
+
+		<column name="requestNumberSeqId" primary="true" type="long" />
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long" />
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="userName" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+
+		<column name="seqDate" type="String" />
+		<column name="seqNumber" type="long" />
+		
+
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="seqDate" />
+		</order>
+
+		<!-- Finder methods -->
+
+		<finder name="SeqDate" return-type="RequestNumberSeq">
+			<finder-column name="seqDate" />
+		</finder>
+		
+		<!-- References -->
+
+		<reference entity="AssetEntry" package-path="com.liferay.portlet.asset" />
+		<reference entity="AssetTag" package-path="com.liferay.portlet.asset" />
+	</entity>
+	
+	
+</service-builder>

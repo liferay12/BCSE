@@ -1,0 +1,4 @@
+Bundle-Name: rename-dms-folder
+Bundle-SymbolicName: rename.dms.folder
+Bundle-Version: 1.0.0
+Export-Package: rename.dms.folder.constants

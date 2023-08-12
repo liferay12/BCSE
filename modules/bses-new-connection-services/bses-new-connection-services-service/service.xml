@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.0.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_0_0.dtd">
+
+<service-builder package-path="com.bses.portal.newconnection.services">
+	<namespace>NewConn</namespace>
+	
+	<entity local-service="true" table="DSS_SEVAKENDRA_MST" name="DssSevaKendraMst" remote-service="false">	
+		<column name="district" db-name="DISTRICT" primary="true" type="String"/>
+		<column name="skAddrP2" db-name="SK_ADDRESS_P2" primary="true" type="String"/>
+		<column name="active" db-name="ACTIVE" type="String" />
+		<column name="entryDate" db-name="ENTRY_DATE" type="Date" />
+		<column name="dcMachineIp" db-name="DC_MACHINEIP" type="String" />
+		<column name="skAddressP1" db-name="SK_ADDRESS_P1" type="String" />
+		<column name="telephoneNo" db-name="TELEPHONE_NO" type="String" />
+		<column name="name" db-name="NAME" type="String" />
+		<column name="appoitnmentDaysInterval" db-name="APOINTMENT_DAYSINTERVAL" type="Integer" />		
+		<column name="appslotcount" db-name="APP_SLOT_CNT" type="Integer" />	
+		<column name="gpslink" type="String" db-name="GPS_LINK"/>
+		<column name="youtubelinkenglish" type="String" db-name="YOU_TUBE_ENGLISH"/>
+		<column name="youtubelinkhindi" type="String" db-name="YOU_TUBE_HINDI"/>
+		<column name="dskManager" type="String" db-name="DSKMANAGER"/>
+		<column name="dskManagerContactNo" type="String" db-name="DSKMANAGERCONTACTNO"/>
+		<column name="dskTeleCallerNo" type="String" db-name="DSKTELECALLERNO"/>
+		<column name="dskManagerEmailId" type="String" db-name="DSKMANAGEREMAILID"/>
+		<column name="businessManager" type="String" db-name="BUSINESSMANAGER"/>
+		<column name="businessManagerContactNo" type="String" db-name="BUSINESSMANAGERCONTACTNO"/>
+		<column name="businessManagerEmailId" type="String" db-name="BUSINESSMANAGEREMAILID"/>
+		<column name="amps" type="String" db-name="AMPS"/>
+		<column name="ampsContactNo" type="String" db-name="AMPSCONTACTNO"/>
+		<column name="ampsEmailId" type="String" db-name="AMPSEMAILID"/>
+		<column name="businessAddress" type="String" db-name="BUSINESSADDRESS"/>
+		
+		<!-- finder  -->
+		<finder return-type="DssSevaKendraMst" name="ByDistrictAndName">
+			<finder-column name="district"></finder-column>
+			<finder-column name="name"></finder-column>
+		</finder>
+		
+		<finder return-type="DssSevaKendraMst" name="ByDistrict">
+			<finder-column name="district"></finder-column>
+		</finder>
+		
+		<finder return-type="DssSevaKendraMst" name="ByName">
+			<finder-column name="name"></finder-column>
+		</finder>
+		
+	</entity>
+	
+</service-builder>

@@ -1,0 +1,19 @@
+Bundle-Name: bses-connection-api
+Bundle-SymbolicName: com.bses.connection2.api
+Bundle-Version: 1.0.0
+Import-Package: *; version="0";resolution:=optional
+Export-Package: \
+	com.bses.connection2.exception,\
+	com.bses.connection2.model,\
+	com.bses.connection2.service,\
+	com.bses.connection2.service.persistence,\
+	com.bses.connection2.helper,\
+	org.apache.commons.lang3,\
+	com.bses.connection2.util
+	
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../bses-connection-service/service.xml,\
+lib/commons-lang3-3.9.jar=commons-lang3-3.9.jar
+
+Bundle-ClassPath:.,\
+  lib/commons-lang3-3.9.jar

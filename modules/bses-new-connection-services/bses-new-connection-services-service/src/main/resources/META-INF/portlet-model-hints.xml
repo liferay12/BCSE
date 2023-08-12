@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.bses.portal.newconnection.services.model.DssSevaKendraMst">
+		<field name="district" type="String" />
+		<field name="skAddrP2" type="String" />
+		<field name="active" type="String" />
+		<field name="entryDate" type="Date" />
+		<field name="dcMachineIp" type="String" />
+		<field name="skAddressP1" type="String" />
+		<field name="telephoneNo" type="String" />
+		<field name="name" type="String" />
+		<field name="appoitnmentDaysInterval" type="Integer" />
+		<field name="appslotcount" type="Integer" />
+		<field name="gpslink" type="String" />
+		<field name="youtubelinkenglish" type="String" />
+		<field name="youtubelinkhindi" type="String" />
+		<field name="dskManager" type="String" />
+		<field name="dskManagerContactNo" type="String" />
+		<field name="dskTeleCallerNo" type="String" />
+		<field name="dskManagerEmailId" type="String" />
+		<field name="businessManager" type="String" />
+		<field name="businessManagerContactNo" type="String" />
+		<field name="businessManagerEmailId" type="String" />
+		<field name="amps" type="String" />
+		<field name="ampsContactNo" type="String" />
+		<field name="ampsEmailId" type="String" />
+		<field name="businessAddress" type="String" />
+	</model>
+</model-hints>

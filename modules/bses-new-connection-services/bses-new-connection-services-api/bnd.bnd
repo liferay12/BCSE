@@ -1,0 +1,9 @@
+Bundle-Name: bses-new-connection-services-api
+Bundle-SymbolicName: com.bses.portal.newconnection.services.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.bses.portal.newconnection.services.exception,\
+	com.bses.portal.newconnection.services.model,\
+	com.bses.portal.newconnection.services.service,\
+	com.bses.portal.newconnection.services.service.persistence
+-includeresource: META-INF/service.xml=../bses-new-connection-services-service/service.xml

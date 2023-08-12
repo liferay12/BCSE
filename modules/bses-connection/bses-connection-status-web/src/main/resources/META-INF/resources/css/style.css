@@ -1,0 +1,99 @@
+/* @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap'); */
+@font-face {
+    font-family: 'Helvetica';
+    src: url("../fonts/HelveticaNeueLTStd-MdCn.eot");
+    src: url("../fonts/HelveticaNeueLTStd-MdCn.eot?#iefix") format("embedded-opentype"),url("../fonts/HelveticaNeueLTStd-MdCn.woff") format("woff"),url("../fonts/HelveticaNeueLTStd-MdCn.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url("../fonts/HelveticaNeueLTStd-LtCn.eot");
+    src: url("../fonts/HelveticaNeueLTStd-LtCn.eot?#iefix") format("embedded-opentype"),url("../fonts/HelveticaNeueLTStd-LtCn.woff") format("woff"),url("../fonts/HelveticaNeueLTStd-LtCn.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal
+}
+.fs-14{font-size: 14px;}
+.fs-13{font-size: 13px;}
+
+.fw-300{font-weight: 300;}
+
+.bg_eaeaea{background-color: #eaeaea;}
+
+.btn-danger{background: linear-gradient(to bottom,#ec5f67,#b82d35);}
+.table th,.table td{font-size: 15px; white-space: nowrap;}
+.table td{color: #666; vertical-align: middle;}
+
+
+
+
+/* body{font:500 16px 'Helvetica', Helvetica ,sans-serif;} */
+body{font:500 16px 'Helvetica', sans-serif;}
+.helpDropdown {position: absolute; right: 30px; bottom: 13px;  width: 300px; height: 50px; background: #fff; cursor: pointer; padding-top: 17px; text-align: right; z-index: 11;}
+.helpDropdown .dropdown-item{z-index: 9999; border-bottom: 1px solid #e5e5e5; font-size: 14px; padding: 10px; transition: all 0.5s ease; color: #333;}
+.helpDropdown .dropdown-item:hover{color: #000;}
+.helpDropdown span {font-size: 13px;  border-radius: 20px; color: #fff; text-transform: uppercase;}
+
+.rightPanel{position: fixed; top:50%; right: 0; transform: translate(0%, -50%); width: 80px; }
+.rightPanel img,.leftPanel img{max-width: 100%;}
+
+.applyOnline{background:linear-gradient(to bottom,#ec5f67 40%,#b82d35); border: 1px solid #fb6255; border-radius:4px 4px 0 0; box-shadow: inset 1px 5px 5px 3px rgb(248 248 248 / 50%);}
+.custom {border-radius: 0 0 4px 4px; display: flex; align-items: center; padding: 4px 5px 4px 25px;}
+.custom li{font-size: 12px;}
+.CustomForm label{font-size: 13px; color: #5c5c5c;}
+.CustomForm .text-danger{color: #ff0000!important;}
+.useCaret label{color: #000;}
+.useCaret::before{position: absolute; content: ''; left: 50%; top: -2px; transform: translate(-50%, 0%); border: 15px solid; border-color: #fff  transparent transparent transparent;}
+.rules li{font-size: 13px; margin-bottom: 2px; color:#f00;}
+.termCondition{resize: none; overflow-x: auto; height: 250px;}
+
+.parentCounter{position: absolute; display: flex; align-items: center; justify-content: space-between; z-index: 2; left: 0; top: 0; width: 100%; height: 30px; background:transparent; list-style-type: none; margin: 0; padding: 0;}
+.parentCounter li{width: 60px; height: 60px; background: #e9e9e9; border-radius: 75%; display: flex; align-items: center; justify-content: center;}
+.parentCounter li i{ padding-top: 12px; font-size: 22px; background: white; border-radius: 50px; width: 46px; height: 46px; text-align: center; color: #e8382a;}
+.counter img{width: 100%; height: 100%; object-fit: cover; border-radius: 75%; padding: 7px;}
+.termAncher a{display: block; font-size: 14px; color: #666; margin-bottom: 10px;}
+
+
+.select2-container .select2-selection--single {
+    height: calc(1.5em + .75rem + 2px);
+    border: 1px solid #ced4da;
+    height:33px !important;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+    margin-top: 5px;
+}
+
+.select2-results__option {
+    font-weight: 300;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+   font-weight: 300;
+   line-height: 1.5;
+}
+
+.progress {
+	background-color: transparent !important;
+	left: 55px !important;
+}
+
+.parentCounter {
+	width: 85% !important;
+	left: 55px !important;
+}
+
+.progress-bar-animated {
+	width: 85% !important;
+}
+
+.blink {
+    font-size: 0.7rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: red;
+}
+
+.blink span{
+background-color: yellow;
+}
